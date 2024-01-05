@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title id="title">Technical Documentation Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <header class="header-title ">
+      <p>CSS Documentation</p>
+    </header>
+    <div class="nav-link-box">
+      <a href="#CSS_Introduction" class="nav-link">CSS Introduction</a>
+      <a href="#CSS_Selectors" class="nav-link">CSS Selectors</a>
+      <a href="#CSS_Backgrounds" class="nav-link">CSS Backgrounds</a>
+      <a href="#CSS_Paddings" class="nav-link">CSS Paddings</a>
+      <a href="#CSS_Height/Width" class="nav-link">CSS Height/Width</a>
+      <a href="#CSS_Display" class="nav-link">CSS Display</a>
+    </div>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="CSS_Introduction">
+      <header class="main-header">
+        <p class="header-title">CSS Introduction</p>
+      </header>
+      <p class="text-content">CSS is the language we use to style a Web page.</p>
+      <ol class="header-list-box">
+        <p class="title">What is CSS?</p>
+        <li class="header-list">
+          <p class="text-content">CSS stands for Cascading Style Sheets</p>
+        </li>
+        <li class="header-list">
+          <p class="text-content">CSS describes how HTML elements are to be displayed on screen, paper, or in other
+            media</p>
+        </li>
+        <li class="header-liskt">
+          <p class="text-content">CSS saves a lot of work. It can control the layout of multiple web pages all at once
+          </p>
+        </li>
+        <li class="header-list">
+          <p class="text-content">External stylesheets are stored in CSS files.</p>
+        </li>
+      </ol>
+      <div class="main-header">
+        <p class="title">Why Use CSS?</p>
+      </div>
+      <p class="text-content">CSS is used to define styles for your web pages, including the design, layout and
+        variations in display for
+        different devices and screen sizes.</p>
+      <article class="main-header">
+        <p class="title">CSS Saves a Lot of Work!</p>
+      </article>
+      <div>
+        <p class="text-content">The style definitions are normally saved in external .css files.</p>
+
+        <p class="text-content">With an external stylesheet file, you can change the look of an entire website by
+          changing
+          just one file!</p>
+      </div>
+      <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_intro" class="content-title">Try it
+        yourself</a>
+    </section>
+    <section class="main-section" id="CSS_Selectors">
+      <header class="main-header">
+        <p class="header-title">CSS Selectors</p>
+      </header>
+      <p class="text-content">A CSS selector selects the HTML element(s) you want to style.</p>
+      <ol class="header-list-box">
+        <p class="title">What are CSS Selectors</p>
+        <p class="text-content">CSS selectors are used to "find" (or select) the HTML elements you want to style.
+          We can divide CSS selectors into five categories:</p>
+        <li class="header-list">
+          <p class="text-content">Simple selectors (select elements based on name, id, class)</p>
+        </li>
+        <li class="header-list">
+          <p class="text-content">
+            Combinator selectors (select elements based on a specific relationship between them)</p>
+        </li>
+        <li class="header-list">
+          <p class="text-content">
+            Pseudo-class selectors (select elements based on a certain state)</p>
+        </li>
+        <li class="header-list">
+          <p class="text-content">
+            Pseudo-elements selectors (select and style a part of an element)</p>
+        </li>
+        <li class="header-list">
+          <p class="text-content">
+            Attribute selectors (select elements based on an attribute or attribute value)</p>
+        </li>
+      </ol>
+      <article class="main-header">
+        <p class="title">The CSS element Selector</p>
+        <p class="text-content">
+          The element selector selects HTML elements based on the element name.</p>
+        <p class="content-title">Example</p>
+        <p class="text-content">
+          Here, all "p" elements on the page will be center-aligned, with a red text color:</p>
+        <div class="sample-content-box">
+          <code class="sample-content">p {</code>
+          <code class="sample-content">text-align: center;</code>
+          <code class="sample-content">color: red;</code>
+          <code class="sample-content">}</code>
+          </article>
+      </div>
+      <div class="main-header">
+        <p class="title">The CSS id Selector</p>
+        <div>
+          <p class="text-content">
+            The id selector uses the id attribute of an HTML element to select a specific element.</p>
+          <p class="text-content">
+            The id of an element is unique within a page, so the id selector is used to select one unique element!</p>
+          <p class="text-content">
+            To select an element with a specific id, write a hash (#) character, followed by the id of the element.</p>
+        </div>
+        <p class="content-title">Example</p>
+        <p class="text-content">
+          The CSS rule below will be applied to the HTML element with id="para1":</p>
+        <div class="sample-content-box">
+          <code class="sample-content">#para1 {</code>
+          <code class="sample-content">text-align: center;</code>
+          <code class="sample-content">color: red;</code>
+          <code class="sample-content">}</code>
+        </div>
+      </div>
+      <div class="main-header">
+        <p class="title">The CSS class Selector</p>
+        <div>
+          <p class="text-content">
+            The class selector selects HTML elements with a specific class attribute.</p>
+          <p class="text-content">
+            To select elements with a specific class, write a period (.) character, followed by the class name.</p>
+        </div>
+        <p class="content-title">Example</p>
+        <p class="text-content">
+          In this example all HTML elements with class="center" will be red and center-aligned:</p>
+        <div class="sample-content-box">
+          <p class="sample-content">.center {</p>
+          <p class="sample-content">text-align: center;</p>
+          <p class="sample-content">color: red;</p>
+          <p class="sample-content">}</p>
+        </div>
+      </div>
+      <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax_element_class" class="content-title">Try it yourself</a>
+    </section>
+    <section class="main-section" id="CSS_Backgrounds">
+      <header class="main-header">
+        <p class="header-title">CSS Backgrounds</p>
+      </header>
+      <div>
+        <p class="text-content">The CSS background properties are used to add background effects for elements.</p>
+      </div>
+      <ol class="header-list-box">
+        <p class="title">What are CSS Backgrounds</p>
+        <p class="text-content">In these chapters, you will learn about the following CSS background properties:</p>
+        <li class="header-list">
+          <p class="text-content">background-color</p>
+        </li>
+        <li class="header-list">
+          <p class="text-content">background-image</p>
+        </li>
+        <li class="header-list">
+          <p class="text-content">background-position</p>
+        </li>
+      </ol>
+      <div class="main-header">
+        <p class="title">CSS background-color</p>
+        <p class="text-content">The background-color property specifies the background color of an element.</p>
+        <p class="content-title">Example</p>
+        <p class="text-content">The background color of a page is set like this:</p>
+        <div class="sample-content-box">
+          <p class="sample-content">body {</p>
+          <p class="sample-content">background-color: lightblue;</p>
+          <p class="sample-content">}</p>
+        </div>
+      </div>
+      <div class="main-header">
+        <p class="title">CSS background-image</p>
+        <article>
+          <p class="text-content">The background-image property specifies an image to use as the background of an
+            element.</p>
+
+          <p class="text-content">By default, the image is repeated so it covers the entire element.</p>
+          </article>
+        <p class="content-title">Example</p>
+        <p class="text-content">Set the background image for a page:
+        <div class="sample-content-box">
+          <p class="sample-content">body {</p>
+          <p class="sample-content">background-image: url("paper.gif");</p>
+          <p class="sample-content">}</p>
+        </div>
+      </div>
+      <div class="main-header">
+        <p class="title">CSS background - Shorthand property</p>
+        <p class="text-content">To shorten the code, it is also possible to specify all the background properties in
+          one single property. This is called a shorthand property.</p>
+        <p class="content-title">Instead of writing:</p>
+        <div class="sample-content-box">
+          <p class="sample-content">body {</p>
+          <p class="sample-content">background-color: #ffffff;</p>
+          <p class="sample-content">background-image: url("img_tree.png");</p>
+          <p class="sample-content">background-repeat: no-repeat;</p>
+          <p class="sample-content">background-position: right top;</p>
+          <p class="sample-content">}</p>
+        </div>
+        <p class="text-content">You can use the shorthand property background:</p>
+        <p class="content-title">Example</p>
+        <p class="text-content">Use the shorthand property to set the background properties in one declaration:</p>
+        <div class="sample-content-box">
+          <p class="sample-content">body {</p>
+          <p class="sample-content">background: #ffffff url("img_tree.png") no-repeat right top;</p>
+          <p class="sample-content">}</p>
+        </div>
+      </div>
+      <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_background_shorthand" class="content-title">Try
+        it
+        yourself</a>
+    </section>
+    <section class="main-section" id="CSS_Paddings">
+      <header class="main-header">
+        <p class="header-title">CSS Paddings</p>
+      </header>
+      <div class="main-header">
+        <p class="title">CSS Padding</p>
+        <div>
+          <p class="text-content">The CSS padding properties are used to generate space around an element's content,
+            inside of any defined borders.</p>
+
+          <p class="text-content">With CSS, you have full control over the padding. There are properties for setting the
+            padding for each side of an element (top, right, bottom, and left).</p>
+        </div>
+        <p class="content-title">Padding - Individual Sides</p>
+        <ol class="header-list-box">
+          <p class="text-content">CSS has properties for specifying the padding for each side of an element:</p>
+          <li class="header-list">
+            <p class="text-content">padding-top</p>
+          </li>
+          <li class="header-list">
+            <p class="text-content">padding-right</p>
+          </li>
+          <li class="header-list">
+            <p class="text-content">padding-bottom</p>
+          </li>
+          <li class="header-list">
+            <p class="text-content">padding-left</p>
+          </li>
+        </ol>
+        <article>
+          <p class="text-content">All the padding properties can have the following values:</p>
+          <p class="text-content">length - specifies a padding in px, pt, cm, etc.</p>
+          <p class="text-content">% - specifies a padding in % of the width of the containing element</p>
+          <p class="text-content">inherit - specifies that the padding should be inherited from the parent element</p>
+        </article>
+        <p class="content-title">Example</p>
+        <p class="text-content">Set different padding for all four sides of a "div" element:</p>
+        <div class="sample-content-box">
+          <p class="sample-content">div {</p>
+          <p class="sample-content">padding-top: 50px;</p>
+          <p class="sample-content">padding-right: 30px;</p>
+          <p class="sample-content">padding-bottom: 50px;</p>
+          <p class="sample-content">padding-left: 80px;</p>
+          <p class="sample-content">}</p>
+        </div>
+      </div>
+      <div class="main-header">
+        <p class="title">Padding - Shorthand Property</p>
+        <div>
+          <p class="text-content">To shorten the code, it is possible to specify all the padding properties in one
+            property.</p>
+          <p class="text-content">The padding property is a shorthand property for the following individual padding
+            properties:</p>
+        </div>
+        <ol class="header-list-box">
+          <li class="header-list">
+            <p class="text-content">padding-top</p>
+          </li>
+          <li class="header-list">
+            <p class="text-content">padding-right</p>
+          </li>
+          <li class="header-list">
+            <p class="text-content">padding-bottom</p>
+          </li>
+          <li class="header-list">
+            <p class="text-content">padding-left</p>
+          </li>k
+        </ol>
+        <div>
+          <p class="text-content">So, here is how it works:</p>
+          <p class="text-content">If the padding property has four values:</p>
+        </div>
+        <ol class="header-list-box">
+          <p class="text-content">padding: 25px 50px 75px 100px;</p>
+          <li class="header-list">
+            <p class="text-content">top padding is 25px</p>
+          </li>
+          <li class="header-list">
+            <p class="text-content">right padding is 50px</p>
+          </li>
+          <li class="header-list">
+            <p class="text-content">bottom padding is 75px</p>
+          </li>
+          <li class="header-list">
+            <p class="text-content">left padding is 100px</p>
+          </li>
+        </ol>
+      </div>
+      <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_intro" class="content-title">Try it
+        yourself</a>
+    </section>
+    <section class="main-section" id="CSS_Height/Width">
+      <header class="main-header">
+        <p class="header-title">CSS Height/Width</p>
+      </header>
+      <div>
+        <p class="text-content">The CSS height and width properties are used to set the height and width of an element.
+        </p>
+        <p class="text-content">The CSS max-width property is used to set the maximum width of an element.</p>
+        <p class="text-content">CSS Setting height and width</p>
+        <p class="text-content">The height and width properties are used to set the height and width of an element.</p>
+        <p class="text-content">The height and width properties do not include padding, borders, or margins. It sets the
+          height/width of the area inside the padding, border, and margin of the element.</p>
+      </div>
+      <article class="main-header">
+        <p class="title">CSS height and width Values</p>
+        <ol class="header-list-box">
+          <li class="header-list">
+            <p class="text-content">The height and width properties may have the following values:</p>
+          </li>
+          <li class="header-list">
+            <p class="text-content">auto - This is default. The browser calculates the height and width</p>
+          </li>
+          <li class="header-list">
+            <p class="text-content">length - Defines the height/width in px, cm, etc.</p>
+          </li>
+          <li class="header-list">
+            <p class="text-content">% - Defines the height/width in percent of the containing block</p>
+          </li>
+          <li class="header-list">
+            <p class="text-content">initial - Sets the height/width to its default value</p>
+          </li>
+          <li class="header-list">
+            <p class="text-content">inherit - The height/width will be inherited from its parent value</p>
+          </li>
+        </ol>
+        <p class="content-title">Example</p>
+        <p class="text-content">Set the height and width of a "div" element:</p>
+        <div class="sample-content-box">
+          <p class="sample-content">div {</p>
+          <p class="sample-content">height: 200px;</p>
+          <p class="sample-content">width: 50%;</p>
+          <p class="sample-content">background-color: powderblue;</p>
+          <p class="sample-content">}</p>
+        </div>
+    </article>
+      <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_height_width_intro" class="content-title">Try it
+        yourself</a>
+    </section>
+    <section class="main-section" id="CSS_Display">
+      <header class="main-header">
+        <p class="header-title">CSS Display</p>
+      </header>
+      <p class="text-content">The display property is the most important CSS property for controlling layout.</p>
+      <div class="main-header">
+        <article>
+          <p class="text-content">The display Property</p>
+          <p class="text-content">The display property is used to specify how an element is shown on a web page.</p>
+          <p class="text-content">Every HTML element has a default display value, depending on what type of element it
+            is.
+            The default display value for most elements is block or inline.</p>
+
+          <p class="text-content">The display property is used to change the default display behavior of HTML elements.
+          </p>
+          <p class="text-content">The display Property Values</p>
+        </article>
+        <p class="title">The display property has many values:</p>
+        <ol class="tag-list-box">
+          <p class="title tag-title">Value and descriptions</p>
+          <li class="tag-list">
+            <p class="text-content">inline:</p>
+            <p class="text-content">Displays an element as an inline element</p>
+          <li class="tag-list">
+            <p class="text-content">block:</p>
+            <p class="text-content">Displays an element as a blokck element
+              contents Makes the container disappear, making the child elements children of the element the next level
+              up in the DOM</p>
+          </li>
+          <li class="tag-list">
+            <p class="text-content">flex:</p>
+            <p class="text-content">Displays an element as a block-level flex container</p>
+          </li>
+          <li class="tag-list">
+            <p class="text-content">grid:</p>
+            <p class="text-content">Displays an element as a block-level grid container</p>
+          </li>
+          <li class="tag-list">
+            <p class="text-content">inline-block:</p>
+            <p class="text-content">Displays an element as an inline-level block container. The element itself is
+              formatted as an inline element, but you can apply height and width values</p>
+          </li>
+          <li class="tag-list">
+            <p class="text-content">none:</p>
+            <p class="text-content">The element is completely removed</p>
+          </li>
+          <li class="tag-list">
+            <p class="text-content">initial:</p>
+            <p class="text-content">Sets this property to its default value</p>
+          </li>
+          <li class="tag-list">
+            <p class="text-content">inherit:</p>
+            <p class="text-content">Inherits this property from its parent element</p>
+          </li>
+      </div>
+      <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_display_inline_list" class="content-title">Try it
+        yourself</a>
+
+    </section>
+
+  </main>
+</body>
+
+</html>

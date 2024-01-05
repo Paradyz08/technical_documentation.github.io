@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.nav-link-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+}
+
+body {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  justify-content: space-between;   
+}
+
+#main-doc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 70%; 
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 40px 10px;
+  border-left: 2px solid #000;
+}
+
+.main-header {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-title {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.title {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Shadows Into Light', cursive;
+  letter-spacing: 5px;
+}
+
+.text-content {
+  font-size: 18px;
+}
+
+.header-list-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-list {
+  list-style-type: number;
+}
+
+.content-title {
+  color: #00ff00;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: 'Kanit', sans-serif;
+  text-decoration-line: underline;
+  text-decoration-color: #ff0000;
+}
+
+.sample-content-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #00ff00;
+  width: 100%;
+  padding: 20px;
+  outline: 2px solid #ff0000;
+  border-radius: 10px;
+  gap: 5px;
+}
+
+.sample-content {
+  color: #f5f4ff;
+  font-size: 18px;
+  font-family: 'Kanit', sans-serif;
+}
+
+.tag-title {
+ color: #00ff00;
+}
+
+.tag-list-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient( to right, #ff0000, #673147);
+  padding: 10px;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.tag-list {
+ font-weight: 600;
+ list-style-type: number;
+ gap: 10px;
+ display: flex; 
+ color: #00ff00;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 500px){
+  #nav-bar{
+    width: 50%; 
+  }
+
+  #main-doc {
+    width: 50%;
+  }
+}
